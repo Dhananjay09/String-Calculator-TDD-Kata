@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/string_calculator/__init__.py
+src/string_calculator/calculator.py
+src/string_calculator_tdd_kata.egg-info/PKG-INFO
+src/string_calculator_tdd_kata.egg-info/SOURCES.txt
+src/string_calculator_tdd_kata.egg-info/dependency_links.txt
+src/string_calculator_tdd_kata.egg-info/requires.txt
+src/string_calculator_tdd_kata.egg-info/top_level.txt
+tests/test_calculator.py
