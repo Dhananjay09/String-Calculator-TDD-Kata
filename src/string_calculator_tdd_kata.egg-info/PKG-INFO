@@ -1,67 +1,75 @@
 Metadata-Version: 2.4
 Name: string-calculator-tdd-kata
-Version: 1.0.0
-Summary: String Calculator TDD Kata - Incubyte Assessment
-Author-email: Your Name <your.email@example.com>
+Version: 0.1.0
+Summary: String Calculator TDD Kata implementation
+Author-email: Developer <developer@example.com>
+Project-URL: Homepage, https://github.com/yourusername/string-calculator-tdd-kata
+Project-URL: Repository, https://github.com/yourusername/string-calculator-tdd-kata.git
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
 Requires-Python: >=3.8
 Description-Content-Type: text/markdown
 Provides-Extra: dev
-Requires-Dist: pytest>=7.4.0; extra == "dev"
-Requires-Dist: pytest-cov>=4.1.0; extra == "dev"
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0.0; extra == "dev"
 Requires-Dist: pytest-watch>=4.2.0; extra == "dev"
-Requires-Dist: black>=23.7.0; extra == "dev"
-Requires-Dist: isort>=5.12.0; extra == "dev"
+Requires-Dist: black>=23.0.0; extra == "dev"
 Requires-Dist: flake8>=6.0.0; extra == "dev"
-Requires-Dist: mypy>=1.5.0; extra == "dev"
-Requires-Dist: pre-commit>=3.3.0; extra == "dev"
+Requires-Dist: isort>=5.12.0; extra == "dev"
+Requires-Dist: mypy>=1.0.0; extra == "dev"
+Requires-Dist: pre-commit>=3.0.0; extra == "dev"
 
 # String Calculator TDD Kata
 
 This repository contains the implementation of the String Calculator TDD Kata for the Incubyte assessment.
 
-## 🎯 Requirements
+Requirements
 
 - Python 3.8 or higher
 - pip
 
 ##  Quick Start
 
-### 1. Set up the development environment:
+### 1. Create vertual Environment
 ```bash
-make setup
+python3 -m venv venv
 ```
 
 ### 2. Activate the virtual environment:
 ```bash
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate
 ```
 
-### 3. Run your first test:
+### 3. Set up the environment:
+```bash
+make setup
+```
+
+### 4. Run your first test:
 ```bash
 make test
 ```
-
-##  TDD Workflow
+TDD Workflow
 
 This project follows Test-Driven Development principles:
 
-1. **Red**: Write a failing test
-2. **Green**: Write the minimum code to make the test pass
-3. **Refactor**: Clean up the code while keeping tests green
-
-### TDD Cycle Commands:
+TDD Cycle Commands:
 ```bash
 # Run TDD cycle (test, format, lint)
 make tdd-cycle
-
-# Run tests in watch mode (for continuous TDD)
-make test-watch
 
 # Run tests with coverage
 make coverage
 ```
 
-## 📋 Implementation Steps
+Implementation Steps
 
 The String Calculator should handle:
 
@@ -74,7 +82,7 @@ The String Calculator should handle:
 - [ ] Negative numbers throw exceptions
 - [ ] Multiple negative numbers show all in exception
 
-## 🛠️ Available Commands
+## Available Commands
 
 ```bash
 make help          # Show all available commands
@@ -88,11 +96,4 @@ make format        # Format code
 make type-check    # Run type checking
 make clean         # Clean up generated files
 make tdd-cycle     # Run complete TDD cycle
-```
-
-## 📁 Project Structure
-
-```
-├──
-
 ```
