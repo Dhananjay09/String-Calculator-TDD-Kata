@@ -36,8 +36,7 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/string-calculator-tdd-kata"
-Repository = "https://github.com/yourusername/string-calculator-tdd-kata.git"
+Repository = "https://github.com/Dhananjay09/String-Calculator-TDD-Kata.git"
 
 [tool.setuptools.packages.find]
 where = ["src"]
