@@ -83,4 +83,4 @@ class TestStringCalculator:
     ):
         """Parametrized test for negative number exceptions."""
         with pytest.raises(ValueError, match=expected_error):
-            calculator.add(input_str) 
+            calculator.add(input_str)
