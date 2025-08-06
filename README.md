@@ -9,7 +9,7 @@ Requirements
 
 ##  Quick Start
 
-### 1. Create vertual Environment
+### 1. Create virtual Environment
 ```bash
 python3 -m venv venv
 ```
@@ -46,13 +46,13 @@ Implementation Steps
 The String Calculator should handle:
 
 - [ ] Empty string returns 0
-- [ ] Single number returns that number
-- [ ] Two numbers return their sum
-- [ ] Multiple numbers return their sum
+- [ ] Single number returns the same number
+- [ ] Two numbers return sum of both numbers
+- [ ] Multiple numbers return sum of all teh numbers 
 - [ ] Newlines as delimiters
 - [ ] Custom delimiters
 - [ ] Negative numbers throw exceptions
-- [ ] Multiple negative numbers show all in exception
+- [ ] Multiple negative numbers show all in exception in a list 
 
 ## Available Commands
 
