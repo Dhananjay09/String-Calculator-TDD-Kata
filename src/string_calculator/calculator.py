@@ -9,17 +9,6 @@ import re
 
 
 class StringCalculator:
-    """
-    A string calculator which follows TDD principles.
-    
-    This implementation handles:
-    - Empty strings (returns 0)
-    - Single numbers
-    - Multiple comma-separated numbers
-    - Newline delimiters
-    - Custom delimiters
-    - Negative number validation
-    """
     
     def add(self, numbers: str) -> int:
         """
