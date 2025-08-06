@@ -28,3 +28,8 @@ class TestStringCalculator:
         """Test that numbers separated by newlines return their sum."""
         assert calculator.add("1\n2,3") == 6
         assert calculator.add("1\n2\n3") == 6
+
+    def test_add_with_custom_delimiter_returns_sum(self, calculator):
+        """Test that custom delimiters work correctly."""
+        assert calculator.add("//;\n1;2") == 3
+        assert calculator.add("//|\n1|2|3") == 6
