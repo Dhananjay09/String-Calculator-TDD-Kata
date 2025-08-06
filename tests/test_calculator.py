@@ -23,3 +23,8 @@ class TestStringCalculator:
         """Test that multiple comma-separated numbers return their sum."""
         assert calculator.add("1,2,3") == 6
         assert calculator.add("1,2,3,4,5") == 15
+
+    def test_add_numbers_with_newlines_returns_sum(self, calculator):
+        """Test that numbers separated by newlines return their sum."""
+        assert calculator.add("1\n2,3") == 6
+        assert calculator.add("1\n2\n3") == 6
