@@ -34,12 +34,14 @@ class TestStringCalculator:
         assert calculator.add("//;\n1;2") == 3
         assert calculator.add("//|\n1|2|3") == 6
 
-    def test_add_custom_delimiter_without_newline_returns_zero(self, calculator):
+    def test_add_custom_delimiter_without_newline_returns_zero(
+            self, calculator):
         """Test that custom delimiter without newline returns 0."""
         assert calculator.add("//;") == 0
         assert calculator.add("//|") == 0
 
-    def test_add_negative_number_throws_exception(self, calculator):
+    def test_add_negative_number_throws_exception(
+            self, calculator):
         """Test that negative numbers throw an exception."""
         with pytest.raises(ValueError, match="negative numbers not allowed"):
             calculator.add("-1,2")
