@@ -54,3 +54,33 @@ class TestStringCalculator:
             ValueError, match="negative numbers not allowed -1, -3"
         ):
             calculator.add("-1,2,-3")
+
+    @pytest.mark.parametrize(
+        "input_str,expected",
+        [
+            ("", 0),
+            ("1", 1),
+            ("1,2", 3),
+            ("1,2,3", 6),
+            ("1\n2,3", 6),
+            ("//;\n1;2", 3),
+        ],
+    )
+    def test_add_various_inputs(self, calculator, input_str, expected):
+        """Parametrized test for various valid inputs."""
+        assert calculator.add(input_str) == expected
+
+    @pytest.mark.parametrize(
+        "input_str,expected_error",
+        [
+            ("-1", "negative numbers not allowed -1"),
+            ("-1,2,-3", "negative numbers not allowed -1, -3"),
+            ("1,-2,3,-4", "negative numbers not allowed -2, -4"),
+        ],
+    )
+    def test_add_negative_numbers_exceptions(
+        self, calculator, input_str, expected_error
+    ):
+        """Parametrized test for negative number exceptions."""
+        with pytest.raises(ValueError, match=expected_error):
+            calculator.add(input_str)
