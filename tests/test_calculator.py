@@ -18,3 +18,8 @@ class TestStringCalculator:
         """Test that two comma-separated numbers return their sum."""
         assert calculator.add("1,2") == 3
         assert calculator.add("10,20") == 30
+
+    def test_add_multiple_numbers_returns_sum(self, calculator):
+        """Test that multiple comma-separated numbers return their sum."""
+        assert calculator.add("1,2,3") == 6
+        assert calculator.add("1,2,3,4,5") == 15
