@@ -1,0 +1,20 @@
+pytest --cov=src --cov-report=html --cov-report=term-missing
+============================= test session starts ==============================
+platform darwin -- Python 3.9.6, pytest-7.4.0, pluggy-1.5.0
+rootdir: /Users/dhananjay/Documents/String-Calculator-TDD-Kata
+plugins: anyio-4.9.0, order-1.1.0, cov-4.1.0, mock-3.11.1
+collected 18 items
+
+tests/test_calculator.py ..................                              [100%]
+
+---------- coverage: platform darwin, python 3.9.6-final-0 -----------
+Name                                  Stmts   Miss  Cover   Missing
+-------------------------------------------------------------------
+src/string_calculator/__init__.py         3      0   100%
+src/string_calculator/calculator.py      21      0   100%
+-------------------------------------------------------------------
+TOTAL                                    24      0   100%
+Coverage HTML written to dir htmlcov
+
+
+============================== 18 passed in 0.22s ==============================
