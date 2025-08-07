@@ -19,12 +19,8 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-### 3. Set up the environment:
-```bash
-make setup
-```
 
-### 4. Run your first test:
+### 3. Run your first test:
 ```bash
 make test
 ```
