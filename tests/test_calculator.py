@@ -34,6 +34,12 @@ class TestStringCalculator:
         assert calculator.add("//;\n1;2") == 3
         assert calculator.add("//|\n1|2|3") == 6
 
+    def test_solve_spatial_delimiter_for_multiplication(self, calculator):
+        assert calculator.add("//@\n2@3") == 6
+
+    def test_solve_spatial_delimiter_for_sum_of_odd_numbers(self, calculator):
+        assert calculator.add("//o\n2o3o8o4o9") == 12
+
     def test_add_custom_delimiter_without_newline_returns_zero(
             self, calculator):
         """Test that custom delimiter without newline returns 0."""
